@@ -122,7 +122,10 @@ def main(fileName):
             name = jsonValue["names"][string.ea]
 
         xrefs = list(idautils.DataRefsTo(string.ea))
-        jsonValue["strings"][string.ea] = (name, string.length, string.type, xrefs)
+        if idaapi.IDA_SDK_VERSION < 700:
+            jsonValue["strings"][string.ea] = (name, string.length, string.type, xrefs)
+        else:
+            jsonValue["strings"][string.ea] = (name, string.length, string.strtype, xrefs)
 
     # TODO: global variable names and types
     # TODO: stack local variable names and types
