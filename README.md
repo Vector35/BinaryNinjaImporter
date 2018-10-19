@@ -1,3 +1,9 @@
+# New version
+
+A rewrite/fork of this with more features that's better maintained is available at https://zznop.github.io/bnida/
+
+We're still leaving this plugin around and will accept PRs but expect that most future development on this feature will occur on that plugin. 
+
 # Binary Ninja Importer
 
 Utility for transfering analysis information between Binary Ninja and IDA pro. This utility has four parts:
