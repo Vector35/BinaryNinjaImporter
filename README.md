@@ -4,6 +4,8 @@ A rewrite/fork of this with more features that's better maintained is available 
 
 We're still leaving this plugin around and will accept PRs but expect that most future development on this feature will occur on that plugin. 
 
+Additionally, for a plugin that supports fewer types of data synchronized but can do it live, you may also be interested in [revsync](https://github.com/lunixbochs/revsync)
+
 # Binary Ninja Importer
 
 Utility for transfering analysis information between Binary Ninja and IDA pro. This utility has four parts:
